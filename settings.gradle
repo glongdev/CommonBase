@@ -1,0 +1,1 @@
+include ':app', ':common', ':module_main', ':sample_mvvm', ':module_search'
