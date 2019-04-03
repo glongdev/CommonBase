@@ -31,7 +31,7 @@ public class MVVMSampleActivity extends BaseCompatActivity<BookViewModel> {
         mViewModel.selectBook.observe(this, new Observer<BookBean>() {
             @Override
             public void onChanged(BookBean bookBean) {
-                textView.setText(bookBean.getTitle());
+                textView.setText("已选中：" + bookBean.getTitle());
             }
         });
     }

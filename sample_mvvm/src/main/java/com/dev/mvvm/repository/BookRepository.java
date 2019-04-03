@@ -46,23 +46,25 @@ public class BookRepository {
 
     private List<BookBean> localData() {
         List<BookBean> books = new ArrayList<>();
-        books.add(new BookBean("C", 2));
-        books.add(new BookBean("C++", 2));
-        books.add(new BookBean("IOS", 2));
-        books.add(new BookBean("Android", 2));
-        books.add(new BookBean("go", 2));
-        books.add(new BookBean("Js", 2));
-        books.add(new BookBean("HTTP", 2));
-        books.add(new BookBean("Java", 2));
-        books.add(new BookBean("Kotlin", 2));
-        books.add(new BookBean("objective-C", 2));
-        books.add(new BookBean("C#", 2));
-        books.add(new BookBean("PHP", 2));
-        books.add(new BookBean("Python", 2));
-        books.add(new BookBean("Ruby", 2));
-        books.add(new BookBean("SQL", 2));
-        books.add(new BookBean(".NET", 2));
-        books.add(new BookBean("Logo", 2));
+        for (int i = 0; i < 100; i++) {
+            books.add(new BookBean("C", 2));
+            books.add(new BookBean("C++", 2));
+            books.add(new BookBean("IOS", 2));
+            books.add(new BookBean("Android", 2));
+            books.add(new BookBean("go", 2));
+            books.add(new BookBean("Js", 2));
+            books.add(new BookBean("HTTP", 2));
+            books.add(new BookBean("Java", 2));
+            books.add(new BookBean("Kotlin", 2));
+            books.add(new BookBean("objective-C", 2));
+            books.add(new BookBean("C#", 2));
+            books.add(new BookBean("PHP", 2));
+            books.add(new BookBean("Python", 2));
+            books.add(new BookBean("Ruby", 2));
+            books.add(new BookBean("SQL", 2));
+            books.add(new BookBean(".NET", 2));
+            books.add(new BookBean("Logo", 2));
+        }
         return books;
     }
 }

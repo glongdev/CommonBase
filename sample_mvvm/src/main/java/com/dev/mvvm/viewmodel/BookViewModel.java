@@ -1,7 +1,5 @@
 package com.dev.mvvm.viewmodel;
 
-import com.dev.common.scheduler.RxScheduler;
-import com.dev.common.scheduler.task.IOTask;
 import com.dev.mvvm.model.BookBean;
 import com.dev.mvvm.repository.BookRepository;
 
