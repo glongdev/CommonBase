@@ -6,6 +6,7 @@ import com.alibaba.android.arouter.facade.annotation.Route;
 import com.dev.common.base.BaseCompatActivity;
 import com.dev.common.utils.ARouterUtil;
 import com.dev.mvvm.R;
+import com.dev.mvvm.fragments.BookFragment;
 import com.dev.mvvm.model.BookBean;
 import com.dev.mvvm.viewmodel.BookViewModel;
 
@@ -24,6 +25,7 @@ public class MVVMSampleActivity extends BaseCompatActivity<BookViewModel> {
     @Override
     protected void setupViews() {
         textView = findViewById(R.id.textView);
+        getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, new BookFragment()).commitAllowingStateLoss();
     }
 
     @Override

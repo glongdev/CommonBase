@@ -12,7 +12,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text=" "
+        android:text="@string/app_name"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,9 +20,8 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:text="当前选中：" />
 
-    <fragment
-        android:id="@+id/fragment"
-        android:name="com.dev.mvvm.fragments.BookFragment"
+    <FrameLayout
+        android:id="@+id/fragment_container"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"

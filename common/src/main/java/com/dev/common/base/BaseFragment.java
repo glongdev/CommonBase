@@ -69,7 +69,8 @@ public abstract class BaseFragment<T extends ViewModel> extends Fragment {
         Type[] types = superTYpe.getActualTypeArguments();
         if (types.length > 0) {
             Type type = types[0];
-            return ViewModelProviders.of(this).get((Class<T>) type);
+            if (getActivity() != null)
+                return ViewModelProviders.of(getActivity()).get((Class<T>) type);
         }
         return null;
     }

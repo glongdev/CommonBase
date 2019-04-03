@@ -45,7 +45,7 @@ public class BookFragment extends BaseFragment<BookViewModel> implements OnItemC
     @Override
     public void onItemClick(RecyclerView.Adapter adapter, View itemView, int position) {
         BookBean bookBean = mAdapter.getmData().get(position);
-        mViewModel.selectBook.setValue(bookBean);
+        mViewModel.selectBook.postValue(bookBean);
     }
 
     @Override
