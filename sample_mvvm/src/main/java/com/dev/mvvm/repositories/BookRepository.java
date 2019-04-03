@@ -1,4 +1,4 @@
-package com.dev.mvvm.repository;
+package com.dev.mvvm.repositories;
 
 import com.dev.common.scheduler.RxScheduler;
 import com.dev.common.scheduler.task.IOTask;

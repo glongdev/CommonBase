@@ -1,7 +1,7 @@
 package com.dev.mvvm.viewmodel;
 
 import com.dev.mvvm.model.BookBean;
-import com.dev.mvvm.repository.BookRepository;
+import com.dev.mvvm.repositories.BookRepository;
 
 import java.util.List;
 
